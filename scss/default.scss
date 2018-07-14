@@ -1,0 +1,15 @@
+
+@import "./bootstrap/_functions.scss";
+@import "./bootstrap/_variables.scss";
+
+.footer-copyright {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.footer-background {
+    background-color: $cyan;
+    height: 100px;
+}

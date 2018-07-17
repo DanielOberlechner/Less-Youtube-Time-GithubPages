@@ -1,15 +1,67 @@
-
 @import "./bootstrap/_functions.scss";
 @import "./bootstrap/_variables.scss";
+@import "./bootstrap/_bootstrap-reboot.scss";
+@import "./bootstrap/_bootstrap-grid.scss";
+@import "./bootstrap/_bootstrap.scss";
+@import "_mixins.scss";
+#header-background {
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 150px;
+}
+
+.navbar-logo {
+    @include background-image("../img/icon.png")
+}
+
+.navbar-link {
+    color: #C7402D;    
+}
+
+.content-title {}
+
+.content-showoff-img {
+    @include background-image("../img/allofit.png");
+    height: 500px;
+}
+
+.main {
+}
+
+.article1-img {
+    @include background-image("../img/YoutubeAutoplay.png");
+    height: 300px;
+}
+
+.article2-img {
+    @include background-image("../img/YoutubeSidebar.png");
+    height: 300px;
+}
+
+.article3-img {
+    @include background-image("../img/YoutubeEndscreen.png");
+    height: 300px;
+}
 
 .footer-copyright {
-    color: black;
+    color: #EC9770;
     font-size: 30px;
     text-align: center;
     line-height: 100px;
 }
 
+.footer-contact-button {
+    @include spacer(50px 0);
+}
+
+.fa-twitter {
+    font-size: 48px;
+    color: dodgerblue;
+    &:hover {
+        color: darken(dodgerblue, 15%);
+    }
+}
+
 .footer-background {
-    background-color: $cyan;
     height: 100px;
 }

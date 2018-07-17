@@ -1,0 +1,26 @@
+@mixin background-image($url) {
+    background-image: url($url);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin spacer($margin) {
+    margin: $margin;
+}
+
+.spacer-top {
+    margin-top: 100px;
+}
+
+.spacer-bottom {
+    margin-bottom: 100px;
+}
+
+.h1 {
+    color: #133046;
+}
+
+.h2 {
+    color: #15959F;
+}

@@ -12,7 +12,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700" rel="stylesheet">
     <!-- Das neueste kompilierte und minimierte CSS -->
-    <link rel="stylesheet" href="./scss/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/default.css">
     <!-- END CSS FILES END -->
     <!-- START JAVASCRIPT LIBRAY'S START -->
     <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
@@ -33,20 +34,80 @@
     <!-- Google Tag Manager (noscript) -->
     <!-- End Google Tag Manager (noscript) -->
 
-    <header id="header-background">
+    <header id="header-background" class="spacer-top">
         <div class="container">
-            <div style="background-image:url('img/1.jpg')"></div>
+            <div class="row">
+                <div class="col-sm-3 navbar-logo"></div>
+                <a class="col-3" href="#plugin">
+                    <div class="navbar-link h2">The Plugin itself</div>
+                </a>
+                <a class="col-3" href="#functions">
+                    <div class="navbar-link h2">All functions</div>
+                </a>
+                <a class="col-3" href="#contact">
+                    <div class="navbar-link h2">Contact Me</div>
+                </a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <div class="col-xs-12">This is Demo-Website to see how Boostrap 4 works.</div>
+    <main class="container main">
+        <div class="row">
+            <div id="plugin" class="col-12 content-title h1 text-center">"Less Youtube Time" - Chrome Plugin</div>
+            <div class="col-12 content-text">This plugin tries to help you save your precious life time. If you open youtube its very easy to get lost and
+                use hours and hours of your personal time to watch stupid videos on Youtube. My plugin tries to help you
+                to spend less Time on Youtube. What is does is really simply. It disables all Video recommandations so you
+                will see less 'intresting' videos and therefore spend less Time on Youtube.
+                <br> So the Plugin name 'Less Youtube Time' was born.</div>
+            <div class="col-12 text-center spacer-top spacer-bottom">
+                <a class="" href="https://chrome.google.com/webstore/detail/less-youtube-time/bbmgjnamgdnofapaoklaappjpiamcnna" target="_blank">
+                    <div class="btn btn-success content-button">Download 'Less Youtube Time' Plugin</div>
+                </a>
+            </div>
+            <div class="col-12 content-showoff-img"></div>
+        </div>
     </main>
 
-    <footer class="footer-background">
+    <article id="functions" class="container spacer-top">
+        <div class="row">
+            <div class="col-4">
+                <div class="article1-img"></div>
+                <div class="article-title h2">Never again click off the Youtube Autoplay Button</div>
+                <div class="article-text">Youtube does not remeber if you have Autoplay on or off. Therefore they activate as standard this button
+                    and so after every session you have to click it manually off.</div>
+            </div>
+            <div class="col-4">
+                <div class="article2-img"></div>
+                <div class="article-title h2">Youtubte's Sidebar recommendations</div>
+                <div class="article-text">Youtube remembers videos which you liked to watch in the past. So they try to recommend you videos which
+                    you probably would like to watch.</div>
+            </div>
+            <div class="col-4">
+                <div class="article3-img"></div>
+                <div class="article-title h2">Youtube's Endscreen Videos</div>
+                <div class="article-text">After you've watched a whole Youtube Video a 3x3 Grid opens up new videos. They show you a few different
+                    categories so that the chance you click one of those videos increases.</div>
+            </div>
+        </div>
+    </article>
+
+    <footer id="contact" class="footer-background spacer-top">
         <div class="container">
-            <div>
-                <div class="col-xs-12 footer-copyright">A Daniel O. Production</div>
+            <div class="row">
+                <div class="footer-title text-center col-12 h2">Never see annoying Youtube recommandations again</div>
+                <div class="footer-text col-12">You can use your time for sure for better things as spending your time on Youtube. Use your free time to
+                    learn something new in life or spend it with you family or whatever your thing is. Youtube takes your
+                    time but after a day you will forget what you have seen so there is nothing good.</div>
+
+                <div class="footer-btn-title col-12 h2 text-center spacer-top">Wanna say Hi or something else?</div>
+
+                <a class="col-12 text-center" href="mailto:danieloberlechner@hotmail.de">
+                    <div class="btn btn-info footer-contact-button">Contact Me</div>
+                </a>
+                <a class="col-12 text-center" href="https://twitter.com/danielhok_1" target="_blank">
+                    <i class="col-12 fa fa-twitter text-center"></i>
+                </a>
+                <div class="col-12 footer-copyright spacer-top">A Daniel Oberlechner Production &copy; 2018 </div>
             </div>
         </div>
     </footer>

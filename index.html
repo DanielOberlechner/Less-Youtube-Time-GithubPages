@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow" />
     <!-- Die 3 Meta-Tags oben *müssen* zuerst im head stehen;jeglicher sonstiger head-Inhalt muss *nach* diesen Tags kommen -->
-    <title>Demo Website by Daniel</title>
+    <title>Less Youtube Time - by Daniel Oberlechner</title>
     <!-- START CSS FILES START -->
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700" rel="stylesheet">
@@ -18,7 +18,8 @@
     <!-- START JAVASCRIPT LIBRAY'S START -->
     <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="./scripts/site.js"></script>
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -50,29 +51,31 @@
     <header id="header-background" class="">
         <div class="container">
             <div class="row align-items-center header">
-                <div class="col-12 col-lg-3 align-self-center navbar-logo"></div>
-                <a class="col-12 col-lg-3 align-self-center text-center" href="#plugin">
+                <a id="link1" class="col-12 col-lg-3" href="/">
+                    <div class="col-12 col-lg-3 align-self-center navbar-logo"></div>
+                </a>
+                <a id="link2" class="col-12 col-lg-3 align-self-center text-center">
                     <div class="navbar-link h2">The Plugin itself</div>
                 </a>
-                <a class="col-12 col-lg-3 text-center" href="#functions">
+                <a id="link3" class="col-12 col-lg-3 text-center">
                     <div class="navbar-link h2">All functions</div>
                 </a>
-                <a class="col-12 col-lg-3 text-center" href="#contact">
+                <a id="link4" class="col-12 col-lg-3 text-center">
                     <div class="navbar-link h2">Contact Me</div>
                 </a>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <main id="main" class="container">
         <div class="row">
             <div id="plugin" class="col-12 content-title h1 text-center">"Less Youtube Time" - Chrome Plugin</div>
             <div class="col-12 content-text">This plugin tries to help you save your precious life time. If you open Youtube its very easy to get lost and
-                use hours and hours of your personal time to watch stupid videos on Youtube. My plugin tries to help you
-                to spend less Time on Youtube. What is does is really simply. It disables all Video recommandations so you
-                will see less 'intresting' videos and therefore spend less Time on Youtube.
+                use hours and hours of your personal time to watch stupid videos. My plugin tries to help you to spend less
+                Time on Youtube. What is does is really simply. It disables all Video recommandations so you will see less
+                'intresting' videos and therefore spend less Time on Youtube.
                 <br>
-                <br> That is how the Plugin name 'Less Youtube Time' was born.</div>
+                <br> That is how the Plugin 'Less Youtube Time' was born.</div>
             <div class="col-12 text-center spacer-top1 spacer-bottom1">
                 <a class="" href="https://chrome.google.com/webstore/detail/less-youtube-time/bbmgjnamgdnofapaoklaappjpiamcnna" target="_blank">
                     <div class="btn btn-success content-button">Download 'Less Youtube Time' Plugin</div>
@@ -105,10 +108,21 @@
                 <div class="col-md-6 align-self-center article3-img"></div>
                 <div class="col-md-6 align-self-center ">
                     <div class="article-title h2">Youtube's Endscreen Videos</div>
-                    <div class="article-text">After you've watched a whole Youtube Video a 3x3 Grid opens up new videos. They show you a few different
+                    <div class="article-text">After you've watched a whole Youtube Video a 4x3 Grid opens up new videos. They show you a few different
                         categories so that the chance you click one of those videos increases.</div>
                 </div>
             </div>
+        </div>
+    </article>
+
+    <article id="rateme" class="container spacer-top2">
+        <h2 class="h2 text-center">Rate Me ...</h2>
+        <div class="row">
+            <div class="row col-lg-12 distance">
+                <div class="article-text">If you like my plugin it would be super awesome if you could rate my plugin in the chrome store. A good rating
+                    helps to get more attention which I would look forward to. Thanks for your time.</div>
+            </div>
+        </div>
         </div>
     </article>
 
@@ -120,7 +134,7 @@
                     learn something new in life or spend it with you family or whatever your thing is. This plugin will help
                     you to spend less Time on Youtube. Use your time for something useful.</div>
 
-                <div class="footer-btn-title col-12 h2 text-center spacer-top1">Wanna say Hi or something else?</div>
+                <div class="footer-btn-title col-12 h2 text-center spacer-top2">Wanna say Hi or something else?</div>
 
                 <a class="col-12 text-center" href="mailto:danieloberlechner@hotmail.de">
                     <div class="btn btn-info footer-contact-button">Contact Me</div>

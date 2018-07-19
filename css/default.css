@@ -12030,11 +12030,19 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.spacer-top {
+.spacer-top1 {
+  margin-top: 50px;
+}
+
+.spacer-bottom1 {
+  margin-bottom: 50px;
+}
+
+.spacer-top2 {
   margin-top: 100px;
 }
 
-.spacer-bottom {
+.spacer-bottom2 {
   margin-bottom: 100px;
 }
 
@@ -12046,10 +12054,18 @@ a.text-dark:hover, a.text-dark:focus {
   color: #15959F;
 }
 
+h6 {
+  color: #008A6E;
+  color: #006C8C;
+}
+
 #header-background {
-  height: 100px;
-  line-height: 100px;
   margin-bottom: 150px;
+  background-color: #006C8C;
+}
+
+.header {
+  height: 175px;
 }
 
 .navbar-logo {
@@ -12057,6 +12073,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 75px;
 }
 
 .navbar-link {
@@ -12068,7 +12085,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 500px;
+  height: 250px;
 }
 
 .article1-img {
@@ -12096,10 +12113,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .footer-copyright {
-  color: #EC9770;
-  font-size: 30px;
+  color: #006C8C;
+  font-size: 15px;
   text-align: center;
-  line-height: 100px;
 }
 
 .footer-contact-button {
@@ -12117,5 +12133,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 .footer-background {
   height: 100px;
+}
+
+@media (max-width: 767.98px) {
+  .distance {
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header {
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=default.css.map */

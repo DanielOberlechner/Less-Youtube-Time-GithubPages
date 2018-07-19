@@ -5,13 +5,19 @@
 @import "./bootstrap/_bootstrap.scss";
 @import "_mixins.scss";
 #header-background {
-    height: 100px;
-    line-height: 100px;
+    // height: 100px;
+    // line-height: 100px;
     margin-bottom: 150px;
+    background-color: #006C8C;
+}
+
+.header {
+    height: 175px;
 }
 
 .navbar-logo {
-    @include background-image("../img/icon.png")
+    @include background-image("../img/icon.png");
+    height: 75px;
 }
 
 .navbar-link {
@@ -22,10 +28,7 @@
 
 .content-showoff-img {
     @include background-image("../img/allofit.png");
-    height: 500px;
-}
-
-.main {
+    height: 250px;
 }
 
 .article1-img {
@@ -44,10 +47,9 @@
 }
 
 .footer-copyright {
-    color: #EC9770;
-    font-size: 30px;
+    color: #006C8C;
+    font-size: 15px;
     text-align: center;
-    line-height: 100px;
 }
 
 .footer-contact-button {
@@ -65,3 +67,4 @@
 .footer-background {
     height: 100px;
 }
+@import "_responsive.scss";

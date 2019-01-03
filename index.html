@@ -12,6 +12,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700" rel="stylesheet">
     <!-- Das neueste kompilierte und minimierte CSS -->
+    <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/default.css">
     <!-- END CSS FILES END -->
@@ -31,7 +32,7 @@
     <!-- END JAVASCRIPT LIBRAY'S END -->
 </head>
 
-<body>
+<body id="body">
     <!-- Google Tag Manager (noscript) -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122496717-1"></script>
@@ -48,11 +49,14 @@
 
     <!-- End Google Tag Manager (noscript) -->
 
+    <div id="indicator"></div>
+    <div id="scroller"></div>
+
     <header id="header-background" class="">
         <div class="container">
             <div class="row align-items-center header">
                 <a id="link1" class="col-12 col-lg-3" href="/">
-                    <div class="col-12 col-lg-3 align-self-center navbar-logo"></div>
+                    <div class="col-12 col-lg-3 align-self-center navbar-logo mx-auto"></div>
                 </a>
                 <a id="link2" class="col-12 col-lg-3 align-self-center text-center">
                     <div class="navbar-link h2">The Plugin itself</div>
@@ -70,14 +74,18 @@
     <main id="main" class="container">
         <div class="row">
             <div id="plugin" class="col-12 content-title h1 text-center">"Less Youtube Time" - Chrome Plugin</div>
-            <div class="col-12 content-text">This plugin tries to help you save your precious life time. If you open Youtube its very easy to get lost and
-                use hours and hours of your personal time to watch stupid videos. My plugin tries to help you to spend less
-                Time on Youtube. What is does is really simply. It disables all Video recommandations so you will see less
+            <div class="col-12 content-text">This plugin tries to help you save your precious life time. If you open
+                Youtube its very easy to get lost and
+                use hours and hours of your personal time to watch stupid videos. My plugin tries to help you to spend
+                less
+                Time on Youtube. What is does is really simply. It disables all Video recommandations so you will see
+                less
                 'intresting' videos and therefore spend less Time on Youtube.
                 <br>
                 <br> That is how the Plugin 'Less Youtube Time' was born.</div>
             <div class="col-12 text-center spacer-top1 spacer-bottom1">
-                <a class="" href="https://chrome.google.com/webstore/detail/less-youtube-time/bbmgjnamgdnofapaoklaappjpiamcnna" target="_blank">
+                <a class="" href="https://chrome.google.com/webstore/detail/less-youtube-time/bbmgjnamgdnofapaoklaappjpiamcnna"
+                    target="_blank">
                     <div class="btn btn-success content-button">Download 'Less Youtube Time' Plugin</div>
                 </a>
             </div>
@@ -86,13 +94,14 @@
     </main>
 
     <article id="functions" class="container spacer-top2">
-        <h2 class="h2 text-center">Functions</h2>
+        <h2 class="h2 text-center functions">Functions</h2>
         <div class="row">
             <div class="row col-lg-12 distance">
                 <div class="col-md-6 align-self-center article1-img"></div>
                 <div class="col-md-6 align-self-center">
                     <div class="article-title h2">Never again click off the Youtube Autoplay Button</div>
-                    <div class="article-text">Youtube does not remeber if you have Autoplay on or off. Therefore they activate as standard this button
+                    <div class="article-text">Youtube does not remeber if you have Autoplay on or off. Therefore they
+                        activate as standard this button
                         and so after every session you have to click it manually off.</div>
                 </div>
             </div>
@@ -100,7 +109,8 @@
                 <div class="col-md-6 align-self-center article2-img"></div>
                 <div class="col-md-6 align-self-center">
                     <div class="article-title h2">Youtubte's Sidebar recommendations</div>
-                    <div class="article-text">Youtube remembers videos which you liked to watch in the past. So they try to recommend you videos which
+                    <div class="article-text">Youtube remembers videos which you liked to watch in the past. So they
+                        try to recommend you videos which
                         you probably would like to watch.</div>
                 </div>
             </div>
@@ -108,7 +118,8 @@
                 <div class="col-md-6 align-self-center article3-img"></div>
                 <div class="col-md-6 align-self-center ">
                     <div class="article-title h2">Youtube's Endscreen Videos</div>
-                    <div class="article-text">After you've watched a whole Youtube Video a 4x3 Grid opens up new videos. They show you a few different
+                    <div class="article-text">After you've watched a whole Youtube Video a 4x3 Grid opens up new
+                        videos. They show you a few different
                         categories so that the chance you click one of those videos increases.</div>
                 </div>
             </div>
@@ -119,7 +130,8 @@
         <h2 class="h2 text-center">Rate Me ...</h2>
         <div class="row">
             <div class="row col-lg-12 distance">
-                <div class="article-text">If you like my plugin it would be super awesome if you could rate my plugin in the chrome store. A good rating
+                <div class="article-text">If you like my plugin it would be super awesome if you could rate my plugin
+                    in the chrome store. A good rating
                     helps to get more attention which I would look forward to. Thanks for your time.</div>
             </div>
         </div>
@@ -129,12 +141,17 @@
     <footer id="contact" class="footer-background spacer-top2">
         <div class="container">
             <div class="row">
-                <div class="footer-title text-center col-12 h2">Never see annoying Youtube recommandations again</div>
-                <div class="footer-text col-12">You can use your time for sure for better things as spending your time on Youtube. Use your free time to
-                    learn something new in life or spend it with you family or whatever your thing is. This plugin will help
-                    you to spend less Time on Youtube. Use your time for something useful.</div>
+                <div id="no-more">
+                    <div class="footer-title text-center col-12 h2">Never see annoying Youtube recommandations again</div>
+                    <div class="footer-text col-12">You can use your time for sure for better things as spending your
+                        time on Youtube. Use your free time to
+                        learn something new in life or spend it with you family or whatever your thing is. This plugin
+                        will help
+                        you to spend less Time on Youtube. Use your time for something useful.</div>
+                </div>
 
-                <div class="footer-btn-title col-12 h2 text-center spacer-top2">Wanna say Hi or something else?</div>
+                <div id="greetings" class="footer-btn-title col-12 h2 text-center spacer-top2">Wanna say Hi or
+                    something else?</div>
 
                 <a class="col-12 text-center" href="mailto:danieloberlechner@hotmail.de">
                     <div class="btn btn-info footer-contact-button">Contact Me</div>
@@ -142,7 +159,7 @@
                 <a class="col-12 text-center" href="https://twitter.com/danielhok_1" target="_blank">
                     <i class="fa fa-twitter text-center"></i>
                 </a>
-                <div class="col-12 footer-copyright spacer-top1">A Daniel Oberlechner Production &copy; 2018 </div>
+                <div class="col-12 footer-copyright spacer-top1">A Daniel Oberlechner Production &copy; 2019 </div>
             </div>
         </div>
     </footer>

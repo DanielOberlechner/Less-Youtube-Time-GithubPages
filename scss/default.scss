@@ -15,7 +15,7 @@
     background-color: #FF6F69;
 }
 
-#contact #no-more {
+.no-more {
     background-color: #FFCC5C;
 }
 
@@ -42,7 +42,7 @@
 #header-background {
     // height: 100px;
     // line-height: 100px;
-    margin-bottom: 150px;
+    // padding-bosttom: 150px;
     background-color: #006C8C;
 }
 
@@ -112,4 +112,5 @@
 .footer-background {
     height: 100px;
 }
+
 @import "_responsive.scss";

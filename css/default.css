@@ -9637,6 +9637,14 @@ h6 {
   height: 300px;
 }
 
+.article4-img {
+  background-image: url("../img/YoutubeMerchandise.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+}
+
 .footer-copyright {
   color: #006C8C;
   font-size: 15px;

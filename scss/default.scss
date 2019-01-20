@@ -91,6 +91,11 @@
     height: 300px;
 }
 
+.article4-img {
+    @include background-image("../img/YoutubeMerchandise.png");
+    height: 300px;
+}
+
 .footer-copyright {
     color: #006C8C;
     font-size: 15px;
